@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>Login</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- CUSTOM STYLE SOURCES -->
+    <link rel="stylesheet" href="./style.css">
+
   </head>
 
   <body>
-    <h1>Welcome to the login page</h1>
+    <h1 id="welcome">Welcome to the login page</h1>
     
     <form action="action_page.php" method="POST">
       <div class="imgcontainer">
-        <img src="avatar.png" alt="Avatar" class="avatar">
+        <img id="img1" src="avatar.png" alt="Avatar" class="avatar">
       </div>
 
       <br>
     
-      <div class="container">
+      <div id="main_content">
         <label for="uname"><b>Username: </b></label>
         <input type="text" placeholder="Enter Username" name="uname" value="" required>
 
         <br>
     
-        <label for="psw"><b>Password: </b></label>
+        <label for="psw"><b>Password:  </b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
         <br>
     
         <input type="submit" value="Login"> 
 
+        <br>
+
+        <div id="forgot">
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        </div>
 
       </div>
-
-      <br>
     
-      <div class="container" style="background-color:#ffffff">
+      <div id="main_content" style="background-color:#ffffff">
         <button type="button" class="cancelbtn"><a href="./main.html"> Cancel</a></button>
-        <span class="psw"> <a href="#">Forgot password?</a></span>
+        <span id="forgot"> <a href="#">Forgot password?</a></span>
       </div>
     </form>
 
